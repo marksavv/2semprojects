@@ -46,7 +46,11 @@ function reverse_user2!( B::Matrix)
     C=Matrix{Int}(undef,size(B))
 
     C[1,:]=reverse_user!(B[1,:])
+    B[1,:]=reverse_user!(B[1,:])
     C[2,:]=reverse_user!(B[2,:])
+    B[2,:]=reverse_user!(B[2,:])
+    C[:,1]=reverse_user!(B[:,1])
+    C[:,2]=reverse_user!(B[:,2])
     
     
     return C
