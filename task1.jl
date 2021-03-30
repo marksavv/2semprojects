@@ -22,16 +22,7 @@ function merge( A::Vector{Int64}, B::Vector{Int64})
         end
     
     end
-    #=for i in 1:length(A)
-        C[i]=A[i]
-    end
-
-    for i in length(A)+1:n
-        C[i]=B[i-length(A)]
-    end
-
-    ##sort(C)
-    =#
+   
     return C
 end
 
